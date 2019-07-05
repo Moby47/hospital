@@ -2299,7 +2299,8 @@ a.move-top span{
 		letter-spacing: 1px;
 	}
 	h3.heading, h2.heading {
-		font-size: 35px;
+        font-size: 35px;
+        margin-top: 83px;
 	}
 	h4.heading {
 		font-size: 16px;

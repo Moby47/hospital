@@ -55,61 +55,55 @@
 <!-- contact -->
 <section class="mail pt-lg-5 pt-4">
 	<div class="container pt-lg-5">
-		<h2 class="heading text-center mb-sm-5 mb-4">Manage Patient </h2>
+        <h2 class="heading text-center mb-sm-5 mb-4">Manage Patient </h2>
+        
+        <div class=" text-center">
+                @if (session('msg'))
+                    <div class="alert alert-success">
+                        {{ session('msg') }}
+                    </div>
+                @endif
+            </div>
+
 		<div class="row agileinfo_mail_grids">
 			<div class="col-lg-12 agileinfo_mail_grid_right">
                 
+                @if(count($rec)>0)
                 
                 <div class=table-responsive>
-                    <table class='table table-bordered table-hover table-striped'>
-                        <tr>
-                            <th>Patient Name</th>
-                            <th>Age</th>
-                            <th>Symptoms</th>
-                            <th>Prescription</th>
-                            <th>Date</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
-                        </tr>
+                        <table class='table table-bordered table-hover table-striped'>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Age</th>
+                                <th>Symptoms</th>
+                                <th>Prescription</th>
+                                <th>Date</th>
+                                <!--<th>Edit</th>-->
+                                <th>Delete</th>
+                            </tr>
+    
+                            @foreach($rec as $r)
+                            <tr>
+                                <td>{{$r->fullname}}</td>
+                                <td>{{$r->age}}</td>
+                                <td>{{$r->sym}}</td>
+                                <td>{{$r->pres}}</td>
+                                <td>{{$r->created_at->diffforhumans()}}</td>
+                         <!--   <td><a href='/edit/{{$r->id}}' class'btn btn-info'><i span class='fa fa-pencil'></i></a></td>
+                         -->
+                            <td><a href='/delete-p/{{$r->id}}' class'btn btn-danger'><i span class='fa fa-remove'></i></a></td>
+                            </tr>
+                          @endforeach
+                        </table>
+                    </div>
+                    {{ $rec->links() }}
 
-                        <tr>
-                            <td>Chidera</td>
-                            <td>24</td>
-                            <td>love! lol</td>
-                            <td>henry #winks</td>
-                            <td>5days ago</td>
-                            <td><a href='#' class'btn btn-info'><i span class='fa fa-pencil'></i></a></td>
-                            <td><a href='#' class'btn btn-danger'><i span class='fa fa-remove'></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Chidera</td>
-                            <td>24</td>
-                            <td>love! lol</td>
-                            <td>henry #winks</td>
-                            <td>5days ago</td>
-                            <td><a href='#' class'btn btn-info'><i span class='fa fa-pencil'></i></a></td>
-                            <td><a href='#' class'btn btn-danger'><i span class='fa fa-remove'></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Chidera</td>
-                            <td>24</td>
-                            <td>love! lol</td>
-                            <td>henry #winks</td>
-                            <td>5days ago</td>
-                            <td><a href='#' class'btn btn-info'><i span class='fa fa-pencil'></i></a></td>
-                            <td><a href='#' class'btn btn-danger'><i span class='fa fa-remove'></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Chidera</td>
-                            <td>24</td>
-                            <td>love! lol</td>
-                            <td>henry #winks</td>
-                            <td>5days ago</td>
-                            <td><a href='#' class'btn btn-info'><i span class='fa fa-pencil'></i></a></td>
-                            <td><a href='#' class'btn btn-danger'><i span class='fa fa-remove'></i></a></td>
-                        </tr>
-                    </table>
-                </div>
+                @else
+<div class='alert alert-info text-center'>
+    No record found
+</div>
+                @endif
+
 
 			</div>
 			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4 contact-info">

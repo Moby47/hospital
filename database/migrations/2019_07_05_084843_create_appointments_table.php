@@ -17,7 +17,7 @@ class CreateAppointmentsTable extends Migration
             $table->increments('id');
             $table->string('fullname');
             $table->integer('age');
-            $table->text('sym');
+            $table->text('note');
             $table->timestamps();
         });
     }

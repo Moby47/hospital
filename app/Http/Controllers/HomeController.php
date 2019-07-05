@@ -29,7 +29,7 @@ class HomeController extends Controller
     }
 
     public function manage(){
-        $rec = patient::all();
+        $rec = patient::where('id','!=',0)->paginate(7);
         return view('manage')->with('rec',$rec);
     }
 
@@ -38,7 +38,7 @@ class HomeController extends Controller
     }
 
     public function appointment(){
-        $rec = appointment::all();
+        $app = appointment::where('id','!=',0)->paginate(7);
         return view('appointment')->with('app',$app);
     }
 
@@ -50,6 +50,26 @@ class HomeController extends Controller
        $save->pres = $request->input('pres');
        $save->save();
        return redirect('/create')->with('msg','Patient Record Created successfully!');
+    }
+
+
+    public function edit($id){
+        return $id;
+    }
+
+
+    public function deletep($id){
+        $del = patient::findorfail($id);
+        $del->delete();
+        return redirect('/manage')->with('msg','Patient Record Deleted!');
+    }
+
+
+
+    public function deletea($id){
+        $del = appointment::findorfail($id);
+        $del->delete();
+        return redirect('/appointment')->with('msg','Appointment Deleted!');
     }
 
 }

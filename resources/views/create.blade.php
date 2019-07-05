@@ -57,15 +57,7 @@
 <section class="mail pt-lg-5 pt-4">
 	<div class="container pt-lg-5">
 		
-			<div class="text-center">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-				</div>
+			
 				
 		<h2 class="heading text-center mb-sm-5 mb-4">New Patient </h2>
 		

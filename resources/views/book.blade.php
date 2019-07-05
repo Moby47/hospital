@@ -73,7 +73,7 @@
 						
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea name="sym" placeholder="Symptoms" class="form-control" required=""></textarea>
+								<textarea name="note" placeholder="Note" class="form-control" required=""></textarea>
 							</div>
 							
 						</div>

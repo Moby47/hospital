@@ -22,6 +22,9 @@ Route::get('/create', 'HomeController@create');
 Route::get('/manage', 'HomeController@manage');
 Route::get('/appointment', 'HomeController@appointment');
 Route::post('/newP', 'HomeController@newP')->name('newP');
+//Route::get('/edit/{id}', 'HomeController@edit');
+Route::get('/delete-p/{id}', 'HomeController@deletep');
+Route::get('/delete-a/{id}', 'HomeController@deletea');
 
 
 Route::get('/book', 'guestcontroller@book');
