@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ganga Hospital</title>
+	<title>Lagoon Hospital</title>
 	
 		<!-- css files -->
 		<link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all"><!-- slider css -->
@@ -24,7 +24,7 @@
 <header class="py-3">
 	<div class="container">
 			<div id="logo">
-				<h1> <a href="/"><span class="fa fa-stethoscope" aria-hidden="true"></span> Ganga Hospital</a></h1>
+				<h1> <a href="/"><span class="fa fa-stethoscope" aria-hidden="true"></span>Lagoon Hospital</a></h1>
 			</div>
 		<!-- nav -->
 		<nav class="d-lg-flex">
@@ -116,7 +116,7 @@
 <div class="copyright">
 	<div class="container py-4">
 		<div class=" text-center">
-                <p>© 2019 Ganga Hospital. All Rights Reserved | 
+                <p>© 2019 Lagoon Hospital, Victoria island. All Rights Reserved | 
                         Developed by <a href="https://www.henrymoby.tech/"> Mobytech</a> </p>
         </div>
 	</div>

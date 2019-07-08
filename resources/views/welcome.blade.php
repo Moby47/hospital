@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ganga Hospital</title>
+        <title>Lagoon Hospital</title>
         
             <!-- css files -->
             <link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all"><!-- slider css -->
@@ -26,7 +26,7 @@
 				<ul class="d-lg-flex header-w3_pvt">
 					<li class="mr-lg-3">
 						<span class="fa fa-envelope-open"></span>
-						<a href="mailto:info2dstreet@gmail.com" class="">info@ganga.com</a>
+						<a href="mailto:info2dstreet@gmail.com" class="">info@lagoon.com</a>
 					</li>
 					<li>
 						<span class="fa fa-phone"></span>
@@ -55,7 +55,7 @@
 	<div class="container">
 			<div id="logo">
 				<h1> <a href="/"><span class="fa fa-stethoscope" aria-hidden="true"></span>
-					 Ganga Hospital</a></h1>
+					Lagoon Hospital</a></h1>
 			</div>
 		<!-- nav -->
 		<nav class="d-lg-flex">
@@ -258,7 +258,7 @@
 				<h4 class="mb-sm-4 mb-3">Address Info</h4>
 				<p><span class="fa mr-2 fa-map-marker"></span>64d canal street <span>Tamil Nadu.</span></p>
 				<p class="phone py-2"><span class="fa mr-2 fa-phone"></span> +234 80 3556 2231 </p>
-				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info2dstreet@gmail.com">info@ganga.com</a></p>
+				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info2dstreet@gmail.com">info@lagoon.com</a></p>
 			</div>
 			<div class="col-lg-2 col-sm-6 mb-sm-0 mb-4">
 				<h4 class="mb-sm-4 mb-3">Quick Links</h4>
@@ -299,7 +299,7 @@
 <div class="copyright">
 	<div class="container py-4">
 		<div class=" text-center">
-			<p>© 2019 Ganga Hospital. All Rights Reserved | 
+			<p>© 2019 Lagoon Hospital, Victoria island. All Rights Reserved | 
 				Developed by <a href="https://www.henrymoby.tech/"> Mobytech</a> </p>
 		</div>
 	</div>
